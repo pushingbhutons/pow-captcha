@@ -12,3 +12,16 @@
 
     <input type="submit" value="Submit"/>
 </form>
+
+
+
+<!-- Add this code to the server. This is what the JS above talks to. -->
+<!--
+curl -X POST \
+    -d "token=<coinhive-captcha-token>" \
+    -d "hashes=1024" \
+    -d "secret=<secret-key>" \
+    "https://api.coinhive.com/token/verify"
+
+# {"success": true, "created": 1504205981, "hashes": 1024}
+-->
