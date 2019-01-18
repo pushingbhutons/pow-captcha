@@ -15,7 +15,9 @@
 
 
 
-<!-- Add this code to the server. This is what the JS above talks to. -->
+<!-- Add this code to the server. Only use the below if you need to control server (complexity) ... 
+the pow-cap above works by contacting the coinhive (authedmine) server 
+-->
 <!--
 curl -X POST \
     -d "token=<coinhive-captcha-token>" \
